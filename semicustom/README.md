@@ -10,6 +10,8 @@ conda activate semicustom
 conda update --all
 ```
 
+## Notebook
+
 The notebook can be openend as follows:
 
 ```sh
