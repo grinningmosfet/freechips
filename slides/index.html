@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Free Chips</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			  <section data-background='img/back.svg'>
+        <section data-markdown data-background='img/crisps.jpg'>
+          # Free Chips
+
+          Pierre, _gnugen_, 3.5.2022
+          
+          ![gnugen logo](img/gnugen.svg)
+
+        </section>
+        <section>
+        
+           <h2>A bit of context</h2>
+          
+           <img src="img/circuit.jpg" width="30%">
+           <img src="img/chips.jpg" width="30%">
+           <img src="img/dye.jpg" width="30%">
+
+        </section>
+        <section>
+        
+           <h2>More context</h2>
+          
+           <img src="img/macro.jpg" width="50%">
+
+        </section>
+        <section data-markdown>
+          ## Wik'history
+          * **1958** - First IC (Jack Kilby, _Texas Instruments_) 🤖
+          * **1973** - SPICE is born! (Laurence Nagel, _California_) 🔥
+          * **1981** - EDA becomes an industry 🏭
+          * **1984** - First FPGA is born! (_Altera_) ♻️
+          * **1994** - First generation of HLS (_Synopsys_) 🪄
+          * **2018** - Open-source RTL2GDSII flow (_OpenROAD_) 🚀
+        </section>
+        <section data-markdown>
+          ## More Wik'history
+          
+          Available PDKs are **180nm** (_GlobalFoundries_), **130nm** (_SkyWater_)  and **90nm** (_SkyWater_, FDSOI).
+          
+          First used in the industry between 1999 and 2003. Old but cheap.
+          
+          **Keep in mind that performance can be traded off!**
+        </section>
+        <section data-markdown>
+          ## Why to Open Source?
+          
+          * No license 📜
+          * No restriction ⛔
+          * No NDA 🤐
+          
+          > Who wants overhead?
+          >
+          > Who wants reproducibility?
+        </section>
+        <section data-markdown>
+          ## Why to Open Source?
+          
+          * No integration overhead 🪢
+          * No knowledge overhead 🧠
+          * No strategical overhead 👑
+          * No compliance overhead 🦺
+          
+          > Agile workflow makes engineers (at least me) happy.
+        </section>
+        <section data-markdown>
+          ## Now give real reasons!
+          
+          Silicon is a **basic commodity**.
+          
+          _Politicians sometimes forget this..._
+          
+          * You can go into politics. 🗳️
+          * You can go into low techs. 🚵
+          * You can go into free chips. 🎀
+          
+          **🫵 You can also do the three. 🫵**
+        </section>
+        <section data-markdown data-background='img/hype.jpg'>
+          ## 🤩 Are you hyped enough? 🫨
+          
+          * Semi-custom digital design
+          * Practical work (if ya fancy 😊)
+        </section>
+        </section>
+			  <section data-background='img/back.svg'>
+        <section data-markdown>
+           # Practical work
+           
+           > Imagine that it works...
+
+        </section>
+        <section data-markdown>
+           ## Semicustom digital design
+           
+           ```sh
+           # Prepare the conda environment
+           conda env create --file environment.yml
+           conda activate freechips
+           conda update --all
+           
+           # Launch the jupyter notebook
+           jupyter notebook
+           ```
+
+        </section>
+        </section>
+			  <section data-background='img/back.svg'>
+        <section data-markdown>
+           # Sources
+           
+           ```
+[1] « 90 nm process », Wikipedia. 10 janvier 2023. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://en.wikipedia.org/w/index.php?title=90_nm_process&oldid=1132820400
+[2] « 130 nm process », Wikipedia. 19 décembre 2022. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://en.wikipedia.org/w/index.php?title=130_nm_process&oldid=1128389908
+[3] « 180 nm process », Wikipedia. 19 décembre 2022. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://en.wikipedia.org/w/index.php?title=180_nm_process&oldid=1128389505
+[4] « Electronic design automation », Wikipedia. 4 avril 2023. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://en.wikipedia.org/w/index.php?title=Electronic_design_automation&oldid=1148158141
+[5] M. Granger, English:  « Tyrrells hand-cooked vegetable crisps - veg crisps - parsnip, beetroot & carrot crisps with sea salt » according to the packaging. Sold in the United Kingdom. 2021. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://commons.wikimedia.org/wiki/File:Tyrrells_veg_crisps_1.jpg
+[6] F. Fritz, English:  AMD@7nm@Zen2_RDNA_APU@Oberon@PlayStation5@CXD90060GG_100-000000189_WM33440U00089_S___DSCx9_poly@5xLED Fritzchens Fritz die photo. 2021. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://commons.wikimedia.org/wiki/File:Via@16nm@Centaur_Technology@CHA_SoC@CNS_NCORE_DSC08626-DSC08626_12.jpg
+[7] Epop, English:  Integrated circuit MC1488D from Signetics Corporation : Quad Line EIA-232D Driver. 2013. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://commons.wikimedia.org/wiki/File:MC1488D_S_KME4828_9206KJ.jpg
+[8] K. Palosaari, English:  Three 4016 ICs, manufactured by ST Microelectronics. 2006. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://commons.wikimedia.org/wiki/File:Three_IC_circuit_chips.JPG
+[9] hello@bgjar.com, « Free svg background generator », BGJar. https://bgjar.com/ (consulté le 10 avril 2023).
+[10] J. Helebrant, microphoto of some electronics circuit board. 2021. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://commons.wikimedia.org/wiki/File:Electronics_PCB_circuit_board_003_(51131861191).jpg
+[11] J. Helebrant, microphoto of some electronics circuit board. 2021. Consulté le: 10 avril 2023. [En ligne]. Disponible sur: https://commons.wikimedia.org/wiki/File:Electronics_PCB_circuit_board_007_(51132658884).jpg
+
+           ```
+
+        </section>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
