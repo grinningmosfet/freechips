@@ -112,8 +112,24 @@
            
            ```sh
            # Prepare the conda environment
-           conda env create --file environment.yml
-           conda activate freechips
+           cd semicustom
+           conda env create
+           conda activate semicustom
+           conda update --all
+           
+           # Launch the jupyter notebook
+           jupyter notebook
+           ```
+
+        </section>
+        <section data-markdown>
+           ## Fullcustom digital design
+           
+           ```sh
+           # Prepare the conda environment
+           cd fullcustom
+           conda env create
+           conda activate fullcustom
            conda update --all
            
            # Launch the jupyter notebook
