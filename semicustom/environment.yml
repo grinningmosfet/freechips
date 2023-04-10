@@ -1,0 +1,21 @@
+name: semicustom
+
+channels:
+  - defaults
+
+dependencies:
+  - python=3.7
+  - pip=22.3.1
+  - pip:
+    - gdstk==0.9.37
+  - conda-forge::notebook=5.7.11
+  # Toolchain
+  - litex-hub::openlane=2023.04.07_0_gcb634fd5 
+  - litex-hub::netgen=1.5.251_0_gd111fa0
+  # Process Development Kits (PDKs)
+  - litex-hub::open_pdks.sky130a=1.0.404_0_gbb4b48f
+  #- litex-hub::open_pdks.gf180mcuc=1.0.404_0_gbb4b48f
+  # Other dependencies
+  - conda-forge::fmt=8.1.1
+  - conda-forge::pandas=1.2.3
+
