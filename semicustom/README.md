@@ -2,10 +2,10 @@
 
 ## Environment
 
-Make sure Anaconda is installed. The semicustom environment can be created, updated and activated using:
+Make sure Anaconda is installed and that you are in the `freechips/semicustom` directory. The semicustom environment can be created, updated and activated using:
 
 ```sh
-conda env create --file env-semicustom.yml
+conda env create
 conda activate semicustom
 conda update --all
 ```
