@@ -11,8 +11,6 @@ dependencies:
   - conda-forge::notebook=5.7.11
   # Drawing
   - litex-hub::magic=8.3.389_0_g1d8fcca
-  # Simulation
-  - conda-forge::pyspice
   # Process Development Kits (PDKs)
   - litex-hub::open_pdks.sky130a=1.0.404_0_gbb4b48f
   #- litex-hub::open_pdks.gf180mcuc=1.0.404_0_gbb4b48f
