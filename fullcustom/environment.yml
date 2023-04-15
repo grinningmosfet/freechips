@@ -95,6 +95,7 @@ dependencies:
   - nbformat=5.8.0=pyhd8ed1ab_0
   - ncurses=6.3=h27087fc_1
   - nest-asyncio=1.5.6=pyhd8ed1ab_0
+  - netgen=1.5.251_0_gd111fa0=20230412_103222
   - ngspice-lib=38=h7017330_0
   - notebook=6.5.4=pyha770c72_0
   - notebook-shim=0.2.2=pyhd8ed1ab_0
@@ -160,6 +161,7 @@ dependencies:
   - xorg-renderproto=0.11.1=h7f98852_1002
   - xorg-xextproto=7.3.0=h0b41bf4_1003
   - xorg-xproto=7.0.31=h7f98852_1007
+  - xschem=3.1.0_525_gc71c15e9=20230412_103222
   - xz=5.2.6=h166bdaf_0
   - yaml=0.2.5=h7f98852_2
   - zeromq=4.3.4=h9c3ff4c_1
@@ -169,3 +171,7 @@ dependencies:
   - pip:
       - dataclasses-json==0.5.6
       - gdstk==0.9.37
+      - marshmallow==3.19.0
+      - marshmallow-enum==1.5.1
+      - mypy-extensions==1.0.0
+      - typing-inspect==0.8.0
