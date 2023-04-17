@@ -7,7 +7,6 @@ Make sure Anaconda is installed and that you are in the `freechips/semicustom` d
 ```sh
 conda env create
 conda activate semicustom
-conda update --all
 ```
 
 ## Notebook

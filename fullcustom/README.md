@@ -7,7 +7,6 @@ Make sure Anaconda is installed and that you are in the `freechips/fullcustom` d
 ```sh
 conda env create
 conda activate fullcustom
-conda update --all
 ```
 
 ## Notebook

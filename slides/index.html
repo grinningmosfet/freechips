@@ -20,7 +20,7 @@
         <section data-markdown data-background='img/crisps.jpg'>
           # Free Chips
 
-          Pierre, _gnugen_, 3.5.2022
+          Pierre, _gnugen_, 3.5.2023
           
           ![gnugen logo](img/gnugen.svg)
 
@@ -41,23 +41,26 @@
            <img src="img/macro.jpg" width="50%">
 
         </section>
-        <section data-markdown>
-          ## Wik'history
-          * **1958** - First IC (Jack Kilby, _Texas Instruments_) 🤖
-          * **1973** - SPICE is born! (Laurence Nagel, _California_) 🔥
-          * **1981** - EDA becomes an industry 🏭
-          * **1984** - First FPGA is born! (_Altera_) ♻️
-          * **1994** - First generation of HLS (_Synopsys_) 🪄
-          * **2018** - Open-source RTL2GDSII flow (_OpenROAD_) 🚀
+        <section>
+          <h2>Wik'history</h2>
+          <ul>
+          <li><b>1958</b> - First IC (Jack Kilby, <em>Texas Instruments</em>) 🤖</li>
+          <li><b>1973</b> - SPICE is born! (Laurence Nagel, <em>California</em>) 🔥</li>
+          <li><b>1981</b> - EDA becomes an industry 🏭</li>
+          <li><b>1984</b> - First FPGA is born! (<em>Altera</em>) ♻️</li>
+          <li><b>1994</b> - First generation of HLS (<em>Synopsys</em>) 🪄</li>
+          <li><b>2018</b> - Open-source RTL2GDSII flow (<em>OpenROAD</em>) 🚀</li>
+          </ul>
+          <p class="fragment fade-up"><b>Ready to install 50 years of history in 10 minutes?</b></p>
         </section>
-        <section data-markdown>
-          ## More Wik'history
+        <section>
+          <h2>More Wik'history</h2>
           
-          Available PDKs are **180nm** (_GlobalFoundries_), **130nm** (_SkyWater_)  and **90nm** (_SkyWater_, FDSOI).
+          <p>Available PDKs are <b>180nm</b> (<em>GlobalFoundries</em>), <b>130nm</b> (<em>SkyWater</em>)  and <b>90nm</b> (<em>SkyWater</em>, FDSOI).</p>
           
-          First used in the industry between 1999 and 2003. Old but cheap.
+          <p>First used in the industry between 1999 and 2003. Old but cheap.</p>
           
-          **Keep in mind that performance can be traded off!**
+          <p class="fragment fade-up"><b>Keep in mind that performance can be traded off!</b></p>
         </section>
         <section data-markdown>
           ## Why to Open Source?
@@ -106,6 +109,7 @@
            
            * Meet the PDK
            * Check out the workflows
+           * Addition contextual knowledge (Rules & MOSFETs)
 
         </section>
         <section>
@@ -129,12 +133,33 @@
            <img style="background-color:white;" src="img/fullcustom.svg" height="500vh">
 
         </section>
+        <section>
+        
+           <h2>Related knowledge: Rules</h2>
+          
+           <img style="background-color:white;" src="img/constraints.svg" height="500vh">
+
+        </section>
+        <section>
+        
+           <h2>Related knowledge: MOSFETs</h2>
+          
+           <img style="background-color:white;display:inline-block;vertical-align: middle;" src="img/fet-cross.svg" height="350vw">
+           <img style="background-color:white;display:inline-block;vertical-align: middle;" src="img/fet-floor.png" height="350vh">
+
+        </section>
         </section>
 			  <section data-background='img/back.svg'>
         <section data-markdown>
            # Practical work
            
-           > Imagine that it works...
+           ```sh
+           # 🐂/🐧 + 🍏 users
+           git clone https://forge.slowte.ch/workshops/freechips.git
+           
+           # 🪟 users
+           # Use "IC-CO-IN-SC-*" VMs on https://vdi.epfl.ch
+           ```
 
         </section>
         <section data-markdown>
@@ -145,7 +170,6 @@
            cd semicustom
            conda env create
            conda activate semicustom
-           conda update --all
            
            # Launch the jupyter notebook
            jupyter notebook
@@ -160,7 +184,6 @@
            cd fullcustom
            conda env create
            conda activate fullcustom
-           conda update --all
            
            # Launch the jupyter notebook
            jupyter notebook
