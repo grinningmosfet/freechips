@@ -14,5 +14,5 @@ conda activate semicustom
 The notebook can be openend as follows:
 
 ```sh
-jupyter notebook
+jupyter-notebook
 ```
