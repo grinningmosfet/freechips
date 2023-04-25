@@ -2,10 +2,10 @@
 
 ## Environment
 
-Make sure Anaconda is installed and that you are in the `freechips/semicustom` directory. The semicustom environment can be created, updated and activated using:
+Make sure Anaconda is installed and that you are in the `semicustom` directory. The semicustom environment can be created, updated and activated using:
 
 ```sh
-conda env create
+conda env create # Fulfilled under docker build
 conda activate semicustom
 ```
 
@@ -14,5 +14,5 @@ conda activate semicustom
 The notebook can be openend as follows:
 
 ```sh
-jupyter-notebook
+jupyter-notebook # Add `--allow-root` under docker build
 ```
