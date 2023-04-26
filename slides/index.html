@@ -166,11 +166,12 @@
            # Practical work
            
            ```sh
-           # 🐂/🐧 + 🍏 users
+           # 🐂/🐧 + 🍏 + 🪟  (Ubuntu 22.04.2 LTS under WSL)
            git clone https://forge.slowte.ch/workshops/freechips.git
            
-           # 🪟 users
-           # Use "IC-CO-IN-SC-*" VMs on https://vdi.epfl.ch
+           # 🐋
+           docker build --tag freechips https://forge.slowte.ch/workshops/freechips.git#main
+           docker run --interactive --publish 1853:1853 --tty --network=host freechips
            ```
 
         </section>
@@ -180,11 +181,12 @@
            ```sh
            # Prepare the conda environment
            cd semicustom
-           conda env create
+           conda env create # Already fulfilled under the docker build
            conda activate semicustom
            
            # Launch the jupyter notebook
-           jupyter-notebook
+           jupyter-notebook # When using GNU/Linux, MacOS, WSL
+           jupyter-notebook --ip 0.0.0.0 --port 1853 --no-browser --allow-root
            ```
 
         </section>
@@ -194,11 +196,12 @@
            ```sh
            # Prepare the conda environment
            cd fullcustom
-           conda env create
+           conda env create # Already fulfilled under the docker build
            conda activate fullcustom
            
            # Launch the jupyter notebook
-           jupyter-notebook
+           jupyter-notebook # When using GNU/Linux, MacOS, WSL
+           jupyter-notebook --ip 0.0.0.0 --port 1853 --no-browser --allow-root
            ```
 
         </section>
