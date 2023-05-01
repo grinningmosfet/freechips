@@ -5,7 +5,7 @@
 Make sure Anaconda is installed and that you are in the `semicustom` directory. The semicustom environment can be created, updated and activated using:
 
 ```sh
-conda env create # Already fulfilled under the docker build
+conda env create # Not for Docker
 conda activate semicustom
 ```
 
@@ -14,6 +14,6 @@ conda activate semicustom
 The notebook can be openend as follows:
 
 ```sh
-jupyter-notebook # When using GNU/Linux, MacOS, WSL
-jupyter-notebook --ip 0.0.0.0 --port 1853 --no-browser --allow-root
+jupyter-notebook # For GNU/Linux, MacOS, WSL
+jupyter-notebook --ip 0.0.0.0 --port 1853 --no-browser --allow-root # For Docker
 ```

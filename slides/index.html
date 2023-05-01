@@ -135,14 +135,14 @@
         
            <h2>Semicustom workflow</h2>
           
-           <img style="background-color:white;" src="img/semicustom.svg" height="500vh">
+           <img style="background-color:white;" src="img/semicustom.drawio.svg" height="500vh">
 
         </section>
         <section>
         
            <h2>Fullcustom workflow</h2>
           
-           <img style="background-color:white;" src="img/fullcustom.svg" height="500vh">
+           <img style="background-color:white;" src="img/fullcustom.drawio.svg" height="500vh">
 
         </section>
         <section>
@@ -171,7 +171,7 @@
            
            # 🐋
            docker build --tag freechips https://forge.slowte.ch/workshops/freechips.git#main
-           docker run --interactive --publish 1853:1853 --tty --network=host freechips
+           docker run --interactive --publish 1853:1853 --tty freechips
            ```
 
         </section>
@@ -181,12 +181,12 @@
            ```sh
            # Prepare the conda environment
            cd semicustom
-           conda env create # Already fulfilled under the docker build
+           conda env create # Not for Docker
            conda activate semicustom
            
            # Launch the jupyter notebook
-           jupyter-notebook # When using GNU/Linux, MacOS, WSL
-           jupyter-notebook --ip 0.0.0.0 --port 1853 --no-browser --allow-root
+           jupyter-notebook # For GNU/Linux, MacOS, WSL
+           jupyter-notebook --ip 0.0.0.0 --port 1853 --no-browser --allow-root # For Docker
            ```
 
         </section>
@@ -196,12 +196,12 @@
            ```sh
            # Prepare the conda environment
            cd fullcustom
-           conda env create # Already fulfilled under the docker build
-           conda activate fullcustom
+           conda env create # Not for Docker
+           conda activate fullcustom 
            
            # Launch the jupyter notebook
-           jupyter-notebook # When using GNU/Linux, MacOS, WSL
-           jupyter-notebook --ip 0.0.0.0 --port 1853 --no-browser --allow-root
+           jupyter-notebook # For GNU/Linux, MacOS, WSL
+           jupyter-notebook --ip 0.0.0.0 --port 1853 --no-browser --allow-root # For Docker
            ```
 
         </section>

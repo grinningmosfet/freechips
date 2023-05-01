@@ -29,7 +29,7 @@ A container can be prepared an run using:
 
 ```
 docker build --tag freechips https://forge.slowte.ch/workshops/freechips.git
-docker run --interactive --publish 1853:1853 --tty --network=host freechips
+docker run --interactive --publish 1853:1853 --tty freechips
 ```
 
 A `README.md` file containing instructions for using the assets is available in each directory.
